@@ -61,7 +61,6 @@
 }
 .primary-theme-button{
  background:  var(--primary-color) !important;
- padding: 12px 20px;
  color: #ffffff !important;
  font-weight: 700;
 }
