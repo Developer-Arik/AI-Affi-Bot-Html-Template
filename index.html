@@ -18,15 +18,29 @@
      <img width="200px" src="assets/img/logo.png" alt="logo">
     </a>
    </div>
-   <div class="nav d-none d-md-block">
-    <ul>
-     <li>
-      <a href="/signin.html">Sign in</a>
-     </li>
-     <li class="active">
-      <a href="/signup.html">Sign up</a>
-     </li>
-    </ul>
+   <div class="d-flex">
+    <div class="nav d-none d-md-block me-3">
+     <ul>
+      <li>
+       <a href="/signin.html">Sign in</a>
+      </li>
+      <li class="active">
+       <a href="/signup.html">Sign up</a>
+      </li>
+     </ul>
+    </div>
+    <div id="open-dropdown" class="p-1 d-none align-items-center justify-content-center d-md-flex" style="cursor: pointer;">
+     <span class="material-symbols-outlined" style="font-size: 35px;font-weight: 600;">
+      account_circle
+      </span>
+     <span class="material-symbols-outlined" style="margin-left: -4px;font-weight: bold;">
+      expand_more
+     </span>
+     <ul class="dropdown-menu" style="position: absolute;transform: translate(-20px, 60px);">
+      <li><a href="https://lalsobujbus.com/customer-login" class="dropdown-item">Sign in</a></li>
+      <li><a href="https://lalsobujbus.com/customer-register" class="dropdown-item">Sign up</a></li>
+     </ul>
+    </div>
    </div>
    <div id="menu-toggle" class="p-1 d-flex align-items-center justify-content-center d-md-none" style="cursor: pointer;">
     <span class="material-symbols-outlined" style="font-size: 35px;">

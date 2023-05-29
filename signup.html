@@ -8,6 +8,8 @@
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="assets/icons/menu.css" />
  <link rel="stylesheet" href="assets/icons/close.css">
+ <link rel="stylesheet" href="assets/icons/person.css">
+ <link rel="stylesheet" href="assets/icons/down.css">
  <title>Document</title>
 </head>
 <body>
@@ -18,15 +20,29 @@
      <img width="200px" src="assets/img/logo.png" alt="logo">
     </a>
    </div>
-   <div class="nav d-none d-md-block">
-    <ul>
-     <li>
-      <a href="/signin.html">Sign in</a>
-     </li>
-     <li class="active">
-      <a href="/signup.html">Sign up</a>
-     </li>
-    </ul>
+   <div class="d-flex">
+    <div class="nav d-none d-md-block me-3">
+     <ul>
+      <li>
+       <a href="/signin.html">Sign in</a>
+      </li>
+      <li class="active">
+       <a href="/signup.html">Sign up</a>
+      </li>
+     </ul>
+    </div>
+    <div id="open-dropdown" class="p-1 d-none align-items-center justify-content-center d-md-flex" style="cursor: pointer;">
+     <span class="material-symbols-outlined" style="font-size: 35px;font-weight: 600;">
+      account_circle
+      </span>
+     <span class="material-symbols-outlined" style="margin-left: -4px;font-weight: bold;">
+      expand_more
+     </span>
+     <ul class="dropdown-menu" style="position: absolute;transform: translate(-20px, 60px);">
+      <li><a href="https://lalsobujbus.com/customer-login" class="dropdown-item">Sign in</a></li>
+      <li><a href="https://lalsobujbus.com/customer-register" class="dropdown-item">Sign up</a></li>
+     </ul>
+    </div>
    </div>
    <div id="menu-toggle" class="p-1 d-flex align-items-center justify-content-center d-md-none" style="cursor: pointer;">
     <span class="material-symbols-outlined" style="font-size: 35px;">
@@ -54,10 +70,10 @@
  <section id="hero-signup">
   <div class="container">
    <div class="row">
-    <div class="col-7 d-none d-md-block">
+    <div class="col-12 col-md-7">
      <img width="100%" src="assets/img/hero-side.png" alt="">
     </div>
-    <div class="col-12 col-md-5">
+    <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
      <div class="pt-5 pb-3">
       <h1>Signup Here</h1>
      </div>
@@ -79,7 +95,7 @@
         <input type="password" class="form-control" id="exampleFormControlTextarea4" autocomplete="new-password" name="confirm_password" placeholder="Confirm Password" />
       </div>
       <div class="mb-3 d-grid">
-       <button class="btn primary-theme-button" type="submit">Create Account</button>
+       <button class="btn primary-theme-button py-2" type="submit">Create Account</button>
       </div>
      </form>
     </div>
